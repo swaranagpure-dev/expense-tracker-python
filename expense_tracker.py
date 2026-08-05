@@ -34,7 +34,7 @@ def delete_expenses():
                 deleted=expenses.pop(delete_expense - 1)
                 print("Expense Deleted Successfully!" )
                 print("Deleted Expenses:")
-                print(f"{deleted["name"]}:{deleted["amount"]}")
+                print(f"{deleted['name']}:{deleted['amount']}")
                 print("Remaining expenses:")
                 view_expenses()
 while True:
