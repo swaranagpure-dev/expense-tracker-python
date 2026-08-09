@@ -1,6 +1,22 @@
+import csv
 expenses=[]
 
-
+def save_expenses():
+    with open("expenses.csv", "w", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=["name", "amount"])
+        writer.writeheader()
+        writer.writerows(expenses)
+def load_expenses():
+    try:
+        with open("expenses.csv", "r") as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                expenses.append({
+                    "name": row["name"],
+                    "amount": int(row["amount"])
+                })
+    except FileNotFoundError:
+        pass
 def add_expenses():
         print("Add Expense Selected")
         expense_name=input("Enter Expense Name:")
@@ -8,6 +24,7 @@ def add_expenses():
         expense_data={"name":expense_name,
         "amount":amount}
         expenses.append(expense_data)
+        save_expenses()
 def view_expenses():
        
         if not expenses:
@@ -25,7 +42,7 @@ def view_total_expenses():
 def delete_expenses():
         if not expenses:
             print("No expenses!")
-        else:
+        else: 
             view_expenses()
             delete_expense=int(input("Enter expense number:"))
             if delete_expense <= 0 or delete_expense > len(expenses):
@@ -37,6 +54,7 @@ def delete_expenses():
                 print(f"{deleted['name']}:{deleted['amount']}")
                 print("Remaining expenses:")
                 view_expenses()
+load_expenses()
 while True:
     print("======Expense Tracker======\n")
     print("1. Add Expense")
