@@ -40,6 +40,14 @@ cd expense-tracker-python
 ```bash
 python expense_tracker.py
 ```
+## Data Storage
+Expense data is stored locally in a CSV file named `expenses.csv`. Each expense record contains:
+- Name
+- Amount
+- Category
+- Date
+
+The saved expenses are automatically loaded when the program starts.
 
 ## Author
 
