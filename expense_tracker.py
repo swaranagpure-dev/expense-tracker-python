@@ -24,11 +24,16 @@ def load_expenses():
 
 def add_expenses():
     print("Add Expense Selected")
-    expense_name = input("Enter Expense Name:").split().title()
+    expense_name = input("Enter Expense Name:")
     while True:
         try:
             amount = int(input("Enter amount:"))
-            break
+
+            if amount > 0:
+                break
+            else:
+                print("Invalid amount! Please enter a positive number.")
+
         except ValueError:
             print("Invalid amount! Please enter a valid number.")
     category = input("Enter category:").strip().title()
