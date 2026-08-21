@@ -4,14 +4,22 @@ A simple command-line Expense Tracker built using Python.
 
 ## Features
 
-- Add expenses
+- Add expenses with name, amount, category, and date
 - View all expenses
 - Calculate total expenses
-- Simple and beginner-friendly
+- View category-wise expense summary
+- Delete expenses
+- Store expenses in a CSV file
+- Load saved expenses when the program starts
+- Validate user input
+- Standardize category names
 
 ## Technologies Used
 
 - Python 3
+- CSV File Handling
+- Git
+- GitHub
 
 ## How to Run
 
