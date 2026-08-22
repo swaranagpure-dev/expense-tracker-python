@@ -58,6 +58,28 @@ The program validates user input to handle invalid entries safely.
 - Expense number must be valid when deleting an expense
 - Invalid inputs are handled using `try-except` without crashing the program
 
+## Screenshots
+
+### Main Menu
+![Main Menu](screenshots/Menu.png)
+
+### 1. Add Expense
+![Add Expense](screenshots/Add.png)
+
+### 2. View Expenses
+![View Expenses](screenshots/View expenses.png)
+
+### 3. View Total
+![View Total](screenshots/Total.png)
+
+### 4. View Summary
+![View Summary](screenshots/Summary.png)
+
+### 5. Delete Expense
+![Delete Expense](screenshots/Delete.png)
+
+### 6. Exit
+![Exit](screenshots/exit.png)
 ## Author
 
 **Swaranagpure**
