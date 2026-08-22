@@ -67,7 +67,7 @@ The program validates user input to handle invalid entries safely.
 ![Add Expense](screenshots/Add.png)
 
 ### 2. View Expenses
-![View Expenses](screenshots/View expenses.png)
+![View Expenses](screenshots/Expenses.png)
 
 ### 3. View Total
 ![View Total](screenshots/Total.png)
