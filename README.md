@@ -67,7 +67,7 @@ The program validates user input to handle invalid entries safely.
 ![Add Expense](screenshots/Add.png)
 
 ### 2. View Expenses
-![View Expenses](screenshots/Expenses.png)
+![View Expenses](screenshots/Expense.png)
 
 ### 3. View Total
 ![View Total](screenshots/Total.png)
@@ -79,7 +79,7 @@ The program validates user input to handle invalid entries safely.
 ![Delete Expense](screenshots/Delete.png)
 
 ### 6. Exit
-![Exit](screenshots/exit.png)
+![Exit](screenshots/Exit.png)
 ## Author
 
 **Swaranagpure**
