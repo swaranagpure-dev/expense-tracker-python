@@ -24,7 +24,7 @@ def load_expenses():
 
 def add_expenses():
     print("Add Expense Selected")
-    expense_name = input("Enter Expense Name:")
+    expense_name = input("Enter Expense Name:").strip().title()
     while True:
         try:
             amount = int(input("Enter amount:"))
