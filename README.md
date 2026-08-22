@@ -49,6 +49,15 @@ Expense data is stored locally in a CSV file named `expenses.csv`. Each expense 
 
 The saved expenses are automatically loaded when the program starts.
 
+## Input Validation
+
+The program validates user input to handle invalid entries safely.
+
+- Amount must be a positive number
+- Menu choice must be between 1 and 6
+- Expense number must be valid when deleting an expense
+- Invalid inputs are handled using `try-except` without crashing the program
+
 ## Author
 
 **Swaranagpure**
